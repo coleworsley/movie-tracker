@@ -11,14 +11,14 @@ import { signUp,
          detailLoading,
        } from '../action';
 import Movie from './Movie'
-import { getNowPlaying, getMovieDetail, getCast } from '../utils/constants'
+import { NOW_PLAYING_URL, getMovieDetail, getCast } from '../utils/constants'
 
 export default class FetchCalls {
   fetchMovies() {
     return (dispatch) => {
       dispatch(moviesAreLoading(true))
 
-      fetch(getNowPlaying(1))
+      fetch(NOW_PLAYING_URL)
       .then(res => {
         dispatch(moviesAreLoading(false))
         return res;

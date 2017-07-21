@@ -2,6 +2,10 @@ import React from 'react';
 import CarouselMovie from '../model/CarouselMovie';
 import { API_KEY } from './api_key';
 
+
+
+export const NOW_PLAYING_URL = '/api/movies';
+// export const getCast = '/api/cast'
 // Get URL Fn
 export const getMovieDetail = (id) => `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}&language=en-US`;
 export const getImageURL = (imageURL) => `https://image.tmdb.org/t/p/w500/${imageURL}`;

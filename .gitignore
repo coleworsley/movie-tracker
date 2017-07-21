@@ -1,7 +1,10 @@
 node_modules/
-app/bundle.js
 app/bundle.js.map
 
 
 # API Key
 app/utils/api_key.js
+
+
+.env
+.DS_Store
